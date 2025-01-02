@@ -1,0 +1,48 @@
+<html>
+<head>
+<title><b><i>Registration Form</i></b></title>
+<script>
+function validateForm()
+{
+var n = document.forms["f1"]["name"].value;
+var e = document.forms["f1"]["email"].value;
+
+if(n == "")
+{
+alert("name must be filled");
+return false;
+}
+else if(e == "")
+{
+alert("email must be filled");
+return false;
+}
+else
+{
+alert("reg is scucc");
+return true;
+}
+
+
+
+
+
+
+}
+
+</script>
+</head>
+<body bgcolor = "blue">
+<center>
+<h1>Registration Form</h1>
+<form name = "f1" align = "center" onsubmit = "return validateForm()">
+Full Name &nbsp;&nbsp;
+<input type = "text" name = "fullname" id = "name" /><br>
+Email &nbsp; &nbsp; &nbsp;
+<input type = "text" name = "email" id = "email" /><br>
+
+<input type = "submit" value = "submit" />
+<input type = "reset" value = "reset" />
+</center>
+</body>
+</html>
